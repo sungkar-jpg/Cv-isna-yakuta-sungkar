@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>CV Isna Yakuta Sungkar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #eaf6ff;
+            color: #334155;
+            padding: 30px 15px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(70, 130, 180, 0.15);
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #a9ddff, #d8f0ff);
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .profile-photo {
+            width: 145px;
+            height: 175px;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 15px;
+            margin-bottom: 18px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #164e78;
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #426b88;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        /* CONTENT */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+        }
+
+        .sidebar {
+            background: #f0f9ff;
+            padding: 30px 25px;
+        }
+
+        .main-content {
+            padding: 30px 28px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            color: #2684bd;
+            font-size: 17px;
+            margin-bottom: 15px;
+            padding-bottom: 9px;
+            border-bottom: 2px solid #c5e8ff;
+            letter-spacing: 1px;
+        }
+
+        .section p,
+        .section li {
+            font-size: 13.5px;
+            line-height: 1.8;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 14px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #2476a8;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+
+        .info-item span {
+            font-size: 13px;
+            line-height: 1.7;
+            overflow-wrap: anywhere;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #d8efff;
+            color: #236b9b;
+            padding: 7px 11px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 3px 2px;
+        }
+
+        .experience-card {
+            background: #f5fbff;
+            border-left: 4px solid #8bcfff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .experience-card h3 {
+            color: #2476a8;
+            font-size: 15px;
+            margin-bottom: 7px;
+        }
+
+        .footer {
+            text-align: center;
+            background: #dff2ff;
+            color: #537b98;
+            padding: 15px;
+            font-size: 11px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 23px;
+            }
+
+            .sidebar,
+            .main-content {
+                padding: 25px;
+            }
+        }
+
+        /* CETAK */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- Simpan foto formal dengan nama foto-formal.jpg -->
+            <img
+                src="foto-formal.jpg"
+                alt="Foto Formal Isna Yakuta Sungkar"
+                class="profile-photo"
+            >
+
+            <h1>ISNA YAKUTA SUNGKAR</h1>
+            <p>CURRICULUM VITAE</p>
+
+        </header>
+
+        <div class="content">
+
+            <!-- KOLOM KIRI -->
+            <aside class="sidebar">
+
+                <section class="section">
+                    <h2>DATA DIRI</h2>
+
+                    <div class="info-item">
+                        <strong>Nama Lengkap</strong>
+                        <span>Isna Yakuta Sungkar</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Umur</strong>
+                        <span>18 tahun</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Tanggal Lahir</strong>
+                        <span>9 Oktober 2008</span>
+                    </div>
+
+                    <div class="info-item">
+                        <strong>Alamat</strong>
+                        <span>
+                            Cikopo Bumiwangi, Kecamatan Ciparay,
+                            Kabupaten Bandung
+                        </span>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>HOBI</h2>
+
+                    <span class="tag">Menulis</span>
+                    <span class="tag">Membaca</span>
+                    <span class="tag">Mendengarkan Musik</span>
+                </section>
+
+                <section class="section">
+                    <h2>KEAHLIAN</h2>
+
+                    <ul>
+                        <li>Membuat puisi</li>
+                        <li>Berolahraga</li>
+                    </ul>
+                </section>
+
+            </aside>
+
+            <!-- KOLOM KANAN -->
+            <main class="main-content">
+
+                <section class="section">
+                    <h2>TENTANG SAYA</h2>
+
+                    <p>
+                        Saya adalah pribadi yang memiliki minat dalam
+                        bidang literasi dan olahraga. Saya senang
+                        menulis puisi untuk mengekspresikan ide dan
+                        perasaan, membaca untuk menambah wawasan,
+                        serta mendengarkan musik di waktu luang.
+                        Saya juga memiliki semangat untuk terus belajar,
+                        mengembangkan kreativitas, dan meningkatkan
+                        kemampuan diri.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>PENGALAMAN EKSTRAKURIKULER</h2>
+
+                    <div class="experience-card">
+                        <h3>Badminton</h3>
+
+                        <p>
+                            Mengikuti kegiatan olahraga badminton
+                            untuk mengembangkan kemampuan olahraga,
+                            melatih konsentrasi, menjaga kedisiplinan,
+                            dan membangun semangat sportivitas.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>MINAT DAN POTENSI</h2>
+
+                    <p>
+                        Saya tertarik pada kegiatan menulis kreatif,
+                        khususnya puisi, serta aktivitas olahraga.
+                        Saya ingin terus mengembangkan kemampuan
+                        tersebut melalui latihan dan pengalaman baru.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>MOTIVASI</h2>
+
+                    <p>
+                        Terus belajar, berani mencoba hal baru,
+                        dan mengembangkan potensi diri untuk menjadi
+                        pribadi yang lebih baik.
+                    </p>
+                </section>
+
+            </main>
+
+        </div>
+
+        <footer class="footer">
+            © 2026 Isna Yakuta Sungkar | Curriculum Vitae
+        </footer>
+
+    </div>
+
+</body>
+  </html>
